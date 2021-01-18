@@ -7,7 +7,7 @@ const webSocketServer = new WebSocket.Server({ server });
 const { sequelize } = require("./utils/db/info");
 const { getLast24, post } = require("./resources/btcusd/btcusd.controller");
 const { isGreaterThanMinElapsedTime } = require("./utils/functions");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
